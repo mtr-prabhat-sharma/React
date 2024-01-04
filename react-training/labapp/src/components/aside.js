@@ -1,14 +1,9 @@
 import './style.css';
 
 export function Aside() {
-    return(
-        <aside className="asideClass">
-            <ul>
-                <li>Home</li>
-                <li>Product</li>
-                <li>Careers</li>
-                <li>Contact Us</li>
-            </ul>
-        </aside>
-    )
+    let arr = ['Home','Product','Careers','Contact US'];
+    let res = arr.map((ele) => {
+        return(<ul><li>{ele}</li></ul>)
+    })
+    return (<aside className='asideClass'>{res}</aside>)
 }

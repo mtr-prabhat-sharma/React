@@ -38,19 +38,19 @@ let NPAT = () => {
 
 export let Mapper = () => {
     let arr = ['Gulab jamun', 'barfi','boondi laddu'];
-    // return (
-    //     arr.map((sweet) => {
-    //         //return (<p>Awesome {sweet}</p>)
-    //         return `Awesome ${sweet}`
-    //     })
-    // )
+    return (
+        arr.map((sweet) => {
+            return (<p>Awesome {sweet}</p>)
+           // return `Awesome ${sweet}`
+        })
+    )
 
     
-    let res = arr.map((sweet) => {
-                //return (<p>Awesome {sweet}</p>)
-                return `Awesome ${sweet}`
-            })
-     return (res);   
+    // let res = arr.map((sweet) => {
+    //             //return (<p>Awesome {sweet}</p>)
+    //             return `Awesome ${sweet}`
+    //         })
+    //  return (res);   
 
     // return (
     //     <p>
