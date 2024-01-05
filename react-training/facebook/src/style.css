@@ -1,0 +1,32 @@
+.headerClass {
+    background-color: bisque;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerClass {
+    background-color: bisque;
+    color:black;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.asideClass {
+    height: 480px;
+    width: 150px;
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+.textarea-main-container {
+    padding: 20px;
+    border: 2px solid black;
+    width: 800px;
+    height: 140px;
+    border-radius: 10px;
+}
