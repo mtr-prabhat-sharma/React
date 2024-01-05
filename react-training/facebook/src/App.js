@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
-import Content from './Components/Content';
+import Content  from './Components/Content';
 import Footer from './Components/Footer';
 
 const App = () => {
@@ -22,11 +22,7 @@ const App = () => {
       <Header />
       <div style={{ display: 'flex' }}>
         <Sidebar />
-        <Content
-          postText={postText}
-          setPostText={setPostText}
-          handlePost={handlePost}
-        />
+        <Content />
       </div>
       <Footer />
       <div>

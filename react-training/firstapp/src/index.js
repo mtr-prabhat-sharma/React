@@ -9,6 +9,7 @@ import { SimpleTimer } from './Timer';
 import { Counter } from './Counter';
 import { DesiMovie, EnglishMovie } from './Movie';
 import { Login, LoginEvents } from './Login';
+import { Likes } from './Likes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
     <EnglishMovie thumbnail='/favicon.ico' mname='Jumanji' />
     <EnglishMovie thumbnail='/favicon.ico' mname='Harry Porter' /> */}
     {/* <Login /> */}
+    <Likes />
     <LoginEvents />
   </React.StrictMode>
 );
