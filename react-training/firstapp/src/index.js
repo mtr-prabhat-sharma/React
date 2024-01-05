@@ -8,16 +8,19 @@ import { Mapper } from './jsxComponent';
 import { SimpleTimer } from './Timer';
 import { Counter } from './Counter';
 import { DesiMovie, EnglishMovie } from './Movie';
+import { Login, LoginEvents } from './Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DesiMovie thumbnail='/favicon.ico' mname='Kantara' />
+    {/* <DesiMovie thumbnail='/favicon.ico' mname='Kantara' />
     <DesiMovie thumbnail='/logo192.png' mname='83' />
     <DesiMovie thumbnail='/logo192.png' mname='Mangalyan' />
 
     <EnglishMovie thumbnail='/favicon.ico' mname='Jumanji' />
-    <EnglishMovie thumbnail='/favicon.ico' mname='Harry Porter' />
+    <EnglishMovie thumbnail='/favicon.ico' mname='Harry Porter' /> */}
+    {/* <Login /> */}
+    <LoginEvents />
   </React.StrictMode>
 );
 

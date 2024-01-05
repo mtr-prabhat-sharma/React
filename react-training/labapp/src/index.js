@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Header } from './components/header';
 import { Aside } from './components/aside';
 import { Footer } from './components/footer';
+import { Posts } from './components/posts';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -20,13 +21,22 @@ header.render(
     <Header />
   </header>
 )
-
+const section = ReactDOM.createRoot(document.getElementById('section'));
+section.render(
+  <div>
+    <Posts thumbnail='/favicon.ico' description='Kantara'/>
+    <Posts thumbnail='/favicon.ico' description='Kantara'/>
+    <Posts thumbnail='/favicon.ico' description='Kantara'/>
+  </div>
+)
 const aside = ReactDOM.createRoot(document.getElementById('aside'));
 aside.render(
   <aside>
     <Aside />
+    
   </aside>
 )
+
 
 const footer = ReactDOM.createRoot(document.getElementById('footer'));
 footer.render(

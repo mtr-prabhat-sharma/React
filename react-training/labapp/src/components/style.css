@@ -46,3 +46,20 @@ body {
   main {
     flex: 1;
   }
+.btn-primary {
+    float: right;
+}
+.btn-class {
+    height: fit-content;
+}
+.posts {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 160px;
+    position: relative;
+    bottom: 475px;
+    margin-left: 170px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
