@@ -10,12 +10,12 @@ const App = () => {
   const [postText, setPostText] = useState('');
   const [posts, setPosts] = useState([]);
 
-  const handlePost = () => {
-    if (postText.trim() !== '') {
-      setPosts([...posts, postText]);
-      setPostText('');
-    }
-  };
+  // const handlePost = () => {
+  //   if (postText.trim() !== '') {
+  //     setPosts([...posts, postText]);
+  //     setPostText('');
+  //   }
+  // };
 
   return (
     <div>
