@@ -9,7 +9,7 @@ export function Login() {
         if(user=='admin' && pwd =='nimda') {
             localStorage.setItem('token',`${user}-${Date.now()}-CY-BLR`)
              ///navigate('/fb/wall')
-             window.location.href = '/fb/wall';
+             window.location.href = '/profile';
         }else {
             alert('Invalid credentials');
 

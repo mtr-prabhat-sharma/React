@@ -71,9 +71,9 @@ root.render(
   
 // )
 
-const myContext = ReactDOM.createRoot(document.getElementById('myContext'));
-myContext.render(
-  <SampleContext />
-)
+// const myContext = ReactDOM.createRoot(document.getElementById('myContext'));
+// myContext.render(
+//   <SampleContext />
+// )
 
 reportWebVitals();

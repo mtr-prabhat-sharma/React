@@ -5,6 +5,9 @@ import { A1, A2, A3 } from './C2C';
 import { createContext } from 'react';
 import { Params } from './PassingParams';
 import { LoginRoute } from './RouteRedirect';
+import { Provider } from 'react-redux';
+import { MyShop } from './ReduxIntegeration'; 
+import { shop } from '../Store/Store'; 
 
 const CommonShare = createContext();
 let styles = { color: 'green' };
@@ -21,14 +24,19 @@ export let Hierarchy = () => {
                         {styles.color}
                     </div>
                 </CommonShare.Provider>} />
-
-
             </Routes>
         </BrowserRouter>
     );
 
 }
 
+let ReduxComponent = () => {
+    return(
+        <Provider store={shop}>
+            <MyShop />
+        </Provider>
+    );
+}
 
 export let Container = () => {
     return (
@@ -38,6 +46,7 @@ export let Container = () => {
                 <Route path='/use/context/' element={<Hierarchy />}/>
                 <Route path='/passing/params/:name/:place/:animal/:thing' element={<Params />} />
                 <Route path='/login' element={<LoginRoute />} />
+                <Route path='/redux' element={<ReduxComponent />} />
             </Routes>
         </BrowserRouter>
     );
