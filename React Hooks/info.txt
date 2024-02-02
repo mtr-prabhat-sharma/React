@@ -1,0 +1,29 @@
+What are Hooks ?
+
+Ques: Why to use hooks ?
+Ans: 1. Hooks are used to share functionality between the components. Before hooks 
+we use hoc's which makes application hard to read and debug.
+2. Hooks gives to ability to split your components into smaller parts using custom hooks.
+
+
+Ques: Rules of Hooks ?
+Answer.
+1. Hooks can only be used in function components.
+2. Hooks must be called at the top level of your function components—meaning inside
+the function, but not inside of a statement or inner function. Because hooks need to 
+run just once every time your function component runs, they can’t be called from 
+inside of conditional statements, loops, or nested functions.
+
+Ques: THE BUILT-IN HOOKS
+React has 10 built-in
+
+➤➤ useState
+➤➤ useEffect
+➤➤ useContext
+➤➤ useReducer
+➤➤ useCallback
+➤➤ useMemo
+➤➤ useRef
+➤➤ useImperativeHandle
+➤➤ useLayoutEffect
+➤➤ useDebugValue
